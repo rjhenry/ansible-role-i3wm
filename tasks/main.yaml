@@ -1,0 +1,20 @@
+---
+- name: Install i3wm and related packages
+  ansible.builtin.package:
+    name: "{{ i3_packages }}"
+    state: present
+  become: true
+
+- name: Ensure config directory exists
+  ansible.builtin.file:
+    mode: u=rwx,g=rx,o=
+    # If it doesn't exist, this will create `.config` too.
+    path: ~/.config/i3
+    state: directory
+
+- name: Create i3 config file
+  ansible.builtin.template:
+    src: templates/dot-config/i3/config.j2
+    dest: ~/.config/i3/config
+    mode: u=rw,g=r,o=
+    validate: i3 -C -c %s

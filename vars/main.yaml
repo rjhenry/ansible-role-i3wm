@@ -1,0 +1,18 @@
+---
+i3_packages:
+  - feh   # For background setting
+  - i3
+  - i3blocks
+  - i3lock-fancy  # None of this commoner i3lock
+  - rofi  # Nicer than `dmenu` for launching things
+  - xautolock   # Lock after a certain time. Just a good idea.
+  - xss-lock  # Integrate with XScreenSaver events
+
+i3_modifier_key: Mod4   # Mod4 = super key, Mod1 = left-alt
+i3_title_font: monospace
+i3_title_font_size: 8
+i3_lock_command: i3lock-fancy -p -g
+i3_terminal: i3-sensible-terminal
+i3_menu_command: rofi -show
+i3_bar: |
+  status_command i3status
