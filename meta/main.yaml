@@ -1,0 +1,26 @@
+---
+dependencies: []
+
+galaxy_info:
+  role_name: i3wm
+  author: rjhenry
+  description: Install and configure the i3 window manager and related tools
+  min_ansible_version: 2.2
+  platforms:
+    - name: GenericUNIX
+      versions:
+        - all
+        - any
+    - name: GenericBSD
+      versions:
+        - all
+        - any
+    - name: GenericLinux
+      versions:
+        - all
+        - any
+  galaxy_tags:
+    - desktop
+    - system
+    - configuration
+    - i3wm
