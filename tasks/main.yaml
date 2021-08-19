@@ -5,7 +5,7 @@
     state: present
   become: true
 
-- name: Ensure config directory exists
+- name: Ensure i3 config directory exists
   ansible.builtin.file:
     mode: u=rwx,g=rx,o=
     # If it doesn't exist, this will create `.config` too.
@@ -18,3 +18,16 @@
     dest: ~/.config/i3/config
     mode: u=rw,g=r,o=
     validate: i3 -C -c %s
+
+- name: Ensure rofi config directory exists
+  ansible.builtin.file:
+    mode: u=rwx,g=rx,o=
+    path: ~/.config/rofi
+    state: directory
+
+- name: Create rofi config file
+  ansible.builtin.template:
+    src: templates/dot-config/rofi/config.rasi.j2
+    dest: ~/.config/rofi/config.rasi
+    mode: u=rw,g=r,o=
+    # Sadly, there's no "validate" program that I'm aware  of

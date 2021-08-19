@@ -16,3 +16,14 @@ i3_terminal: i3-sensible-terminal
 i3_menu_command: rofi -show
 i3_bar: |
   status_command i3status
+
+rofi_modi:
+  - combi
+  - run
+  - ssh
+rofi_combi_modi:
+  - window
+  - run
+  - drun
+  - ssh
+rofi_theme: solarized
