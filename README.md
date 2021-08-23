@@ -23,6 +23,18 @@ on the machine in question.
 
 TODO: Add these
 
+```yaml
+i3wm_execs:
+  - command
+  - othercommand
+  - --no-startup-id command
+i3wm_always_execs:
+  - command
+  - othercommand
+  - --no-startup-id command
+```
+See [the i3wm doc](https://i3wm.org/docs/userguide.html#_automatically_starting_applications_on_i3_startup) for how these work. Commands should be specified in their relevant list.
+
 ## Dependencies
 
 None.
