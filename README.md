@@ -8,11 +8,14 @@
 [![Ansible Role Downloads](https://img.shields.io/ansible/role/d/56008)](https://galaxy.ansible.com/rjhenry/i3wm) 
 [![Ansible Quality Score](https://img.shields.io/ansible/quality/56008)](https://galaxy.ansible.com/rjhenry/i3wm) 
 
-
+There are two copies of this repository! There is my
+[GitLab](https://gitlab.rickhenry.uk/rjh/ansible-role-i3wm), and a copy on
+[GitHub](https://github.com/rjhenry/ansible-role-i3wm). The GitLab copy is the
+primary!
 
 An Ansible role that installs and configures [i3wm](https://i3wm.org/). This
 install is likely to be opinionated towards how I use it, but I endevour to -
-evenually - make essentiall everything configurable with the right set of
+evenually - make essentially everything configurable with the right set of
 variables.
 
 At several points, it may draw inspiration from similar projects, such as
@@ -43,8 +46,16 @@ i3wm_always_execs:
   - othercommand
   - --no-startup-id command
 ```
-See [the i3wm doc](https://i3wm.org/docs/userguide.html#_automatically_starting_applications_on_i3_startup) for how these work. Commands should be specified in their relevant list.
+See
+[the i3wm doc](https://i3wm.org/docs/userguide.html#_automatically_starting_applications_on_i3_startup)
+for how these work. Commands should be specified in their relevant list.
 
 ## Dependencies
 
 None.
+
+## Contributing
+If you feel the need to contribute to this role, please create
+[issues](https://gitlab.rickhenry.uk/rjh/ansible-role-i3wm/-/issues) on the
+project. If you have patches you'd like to submit, create a PR on GitHub, from
+where I'll pull those changes to GitLab.
