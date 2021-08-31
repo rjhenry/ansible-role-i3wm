@@ -183,10 +183,10 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-{% if i3wm_execs is defined and i3wm_execs %} {% for exec in {{ i3wm_execs }} %}
+{% if i3wm_execs is defined and i3wm_execs %} {% for exec in i3wm_execs %}
 exec {{ exec }}
 {% endfor %} {% endif %}
-{% if i3wm_always_execs is defined and i3wm_always_execs %} {% for exec in {{ i3wm_always_execs }} %}
+{% if i3wm_always_execs is defined and i3wm_always_execs %} {% for exec in i3wm_always_execs %}
 exec_always {{ exec }}
 {% endfor %} {% endif %}
 
