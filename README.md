@@ -1,5 +1,15 @@
 # Ansible Role: i3wm
 
+[![CI](https://img.shields.io/gitlab/pipeline/rjh/ansible-role-i3wm/main?gitlab_url=https%3A%2F%2Fgitlab.rickhenry.uk)](https://gitlab.rickhenry.uk/rjh/ansible-role-i3wm/-/commits/main)
+[![GitHub tag (latest SemVer)](https://img.shields.io/github/v/tag/rjhenry/ansible-role-i3wm?sort=semver)]()
+[![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/rjhenry/ansible-role-i3wm)]()
+
+[![Ansible Role](https://img.shields.io/ansible/role/56008)](https://galaxy.ansible.com/rjhenry/i3wm) 
+[![Ansible Role Downloads](https://img.shields.io/ansible/role/d/56008)](https://galaxy.ansible.com/rjhenry/i3wm) 
+[![Ansible Quality Score](https://img.shields.io/ansible/quality/56008)](https://galaxy.ansible.com/rjhenry/i3wm) 
+
+
+
 An Ansible role that installs and configures [i3wm](https://i3wm.org/). This
 install is likely to be opinionated towards how I use it, but I endevour to -
 evenually - make essentiall everything configurable with the right set of
