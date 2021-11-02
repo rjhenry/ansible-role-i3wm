@@ -45,6 +45,10 @@ i3wm_always_execs:
   - command
   - othercommand
   - --no-startup-id command
+
+i3wm_other_binds:
+  - keys: "$mod+Shift+d"
+    action: rofi-pass
 ```
 See
 [the i3wm doc](https://i3wm.org/docs/userguide.html#_automatically_starting_applications_on_i3_startup)
