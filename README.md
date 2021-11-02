@@ -47,7 +47,7 @@ i3wm_always_execs:
   - --no-startup-id command
 
 i3wm_other_binds:
-  - keys: "$mod+Shift+d"
+  - keybind: "$mod+Shift+d"
     action: rofi-pass
 ```
 See

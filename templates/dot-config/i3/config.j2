@@ -183,19 +183,23 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-{% if i3wm_execs is defined and i3wm_execs %} {% for exec in i3wm_execs %}
+# Execs
+{% if i3wm_execs is defined and i3wm_execs -%} {% for exec in i3wm_execs -%}
 exec {{ exec }}
-{% endfor %} {% endif %}
-{% if i3wm_always_execs is defined and i3wm_always_execs %} {% for exec in i3wm_always_execs %}
-exec_always {{ exec }}
-{% endfor %} {% endif %}
+{% endfor -%} {% endif %}
 
-{% if i3wm_other_binds is defined and i3wm_other_binds %} {% for bind in i3wm_other_binds %}
-bindsym {{ bind.keys }} {{ bind.action }}
-{% endfor %} {% endif %}
+# Exec_always
+{% if i3wm_always_execs is defined and i3wm_always_execs -%} {% for exec in i3wm_always_execs -%}
+exec_always {{ exec }}
+{% endfor -%} {% endif %}
+
+# Other keybinds
+{% if i3wm_other_binds is defined and i3wm_other_binds -%} {% for bind in i3wm_other_binds -%}
+bindsym {{ bind.keybind }} {{ bind.action }}
+{% endfor -%} {% endif %}
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
-        {{ i3_bar }}
+        {{ i3_bar -}}
 }
